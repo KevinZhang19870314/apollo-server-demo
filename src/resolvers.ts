@@ -1,5 +1,11 @@
-export default {
-    Query: {
-        testMessage: (): string => 'Hello World!',
-    },
+import {
+    DateTimeResolver,
+    EmailAddressResolver,
+    UnsignedIntResolver
+} from 'graphql-scalars';
+
+export const resolvers = {
+    DateTime: DateTimeResolver,
+    EmailAddress: EmailAddressResolver,
+    UnsignedInt: UnsignedIntResolver
 };
